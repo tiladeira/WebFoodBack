@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "d53d0a33-8d38-4e16-bf09-067e8bf0f8af",
+		"name": "CRUD Produtos Express",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2921580",
+		"_collection_link": "https://hsl-dev.postman.co/workspace/SIGAM-PLUS~4d910ccd-0f8e-4c62-9ba9-35fc2eafff7e/collection/2921580-d53d0a33-8d38-4e16-bf09-067e8bf0f8af?action=share&source=collection_link&creator=2921580"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/produtos/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/produtos/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"produtos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/produtos/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/produtos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"produtos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/produtos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"product_name\": \"Pão Italiano\",\r\n        \"description\": \"Pão Artesanal LTDA\",\r\n        \"quantity\": 44,\r\n        \"status\": 0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/produtos\\4",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"product_name\": \"Pão dfdd Italiano\",\r\n        \"description\": \"Pão Artesanal LTDA\",\r\n        \"quantity\": 44,\r\n        \"status\": 0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/produtos\\4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"produtos",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
